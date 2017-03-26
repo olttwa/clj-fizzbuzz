@@ -1,6 +1,6 @@
 # fizzbuzz
 
-Download from http://github.com/olttwa/fizzbuzz
+Download from https://github.com/olttwa/clj-fizzbuzz
 
 ## Usage
 

@@ -2,6 +2,15 @@
   (:require [clojure.test :refer :all]
             [fizzbuzz.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest divisiblity-by-three
+  (testing "fizz decider function"
+    (let [multiple-of-three    12
+          non-mutiple-of-three 13]
+      (is (= (cond
+               (= 0 (mod multiple-of-three 3)) "fizz"
+               :else "")
+             (is-fizzy multiple-of-three)))
+      (is (= (cond
+               (= 0 (mod  non-mutiple-of-three 3)) "fizz"
+               :else "")
+             (is-fizzy  non-mutiple-of-three))))))

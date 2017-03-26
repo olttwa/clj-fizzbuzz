@@ -2,6 +2,10 @@
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  )
+
+(defn is-fizzy [number]
+  (cond
+    (= 0 (mod number 3)) "fizz"
+    :else ""))
